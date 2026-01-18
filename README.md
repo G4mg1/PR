@@ -5742,7 +5742,6 @@ local function C_14()
 		local BindToFunc = Instance.new('BindableFunction', game.ReplicatedStorage)
 		BindToFunc.Name = "LuaFenv"
 		BindToFunc.OnInvoke = function(code)
-			local loadstring = require(script.Loadstring)
 			loadstring(code.Text)()
 		end
 	end)
