@@ -51,7 +51,7 @@ G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(248, 248, 248);
 G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4"]["PlaceholderText"] = [[Project V]];
+G2L["4"]["PlaceholderText"] = [[Print("Skidding")]];
 G2L["4"]["Size"] = UDim2.new(0, 416, 0, 252);
 G2L["4"]["Position"] = UDim2.new(0.01859, 0, 0.13576, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -5731,10 +5731,6 @@ local function C_14()
 		local BindToFunc = Instance.new('BindableFunction', game.ReplicatedStorage)
 		BindToFunc.Name = "LuaFenv"
 		BindToFunc.OnInvoke = function(code)
-			if string.find(code.Text, "require") then
-				print("-> "..code.Text)
-				print("requiring assest "..code.Text:match("require%((.-)%)"))
-			else
 				local loadstring = require(script.Loadstring)
 				loadstring(code.Text)()
 			end
