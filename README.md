@@ -64,6 +64,8 @@ G2L["4"]["PlaceholderText"] = [[Print("Skidding")]];
 G2L["4"]["Size"] = UDim2.new(0, 416, 0, 252);
 G2L["4"]["Position"] = UDim2.new(0.01859, 0, 0.13576, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["MultiLine"] = true;
+G2L["4"]["ClearTextOnFocus"] = false;
 G2L["4"]["Text"] = [[]];
 
 
