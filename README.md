@@ -6,7 +6,9 @@
 88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
+
 local G2L = {};
+
 -- Instances: 29 | Scripts: 7 | Modules: 3 | Tags: 0
 if not getgenv().__Loaded then
 	getgenv().__Loaded = true
@@ -20,6 +22,13 @@ else
 	})
 	return
 end
+
+game.StarterGui:SetCore("SendNotification", {
+		Title = "Settings";
+		Text = "Project Reminum by g4mg_99 script by Unverified !!!";
+		Icon = "rbxassetid://14421964660";
+		Duration = 5; 
+	})
 
 -- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
