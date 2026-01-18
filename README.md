@@ -6,10 +6,10 @@
 88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
-
+local G2L = {};
 -- Instances: 29 | Scripts: 7 | Modules: 3 | Tags: 0
 if not getgenv().__Loaded then
-	return getgenv().__Loaded == true
+	getgenv().__Loaded = true
 else
 	print("Project Reminum Already Running!")
 	game.StarterGui:SetCore("SendNotification", {
@@ -20,8 +20,6 @@ else
 	})
 	return
 end
-
-local G2L = {};
 
 -- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
