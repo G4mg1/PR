@@ -24,11 +24,11 @@ else
 end
 
 game.StarterGui:SetCore("SendNotification", {
-		Title = "Settings";
-		Text = "Project Reminum by g4mg_99 script by Unverified !!!";
-		Icon = "rbxassetid://14421964660";
-		Duration = 5; 
-	})
+	Title = "Settings";
+	Text = "Project Reminum by g4mg_99 script by Unverified !!!";
+	Icon = "rbxassetid://14421964660";
+	Duration = 5; 
+})
 
 -- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
@@ -5742,9 +5742,8 @@ local function C_14()
 		local BindToFunc = Instance.new('BindableFunction', game.ReplicatedStorage)
 		BindToFunc.Name = "LuaFenv"
 		BindToFunc.OnInvoke = function(code)
-				local loadstring = require(script.Loadstring)
-				loadstring(code.Text)()
-			end
+			local loadstring = require(script.Loadstring)
+			loadstring(code.Text)()
 		end
 	end)
 end;
